@@ -17,7 +17,7 @@ import CoreGraphics
 #endif
 
 /// View that represents a pie chart. Draws cake like slices.
-open class BradDGCharts.PieChartView: PieRadarChartViewBase
+open class DGCharts.PieChartView: PieRadarChartViewBase
 {
     /// rect object that represents the bounds of the piechart, needed for drawing the circle
     private var _circleBox = CGRect()
@@ -257,7 +257,7 @@ open class BradDGCharts.PieChartView: PieRadarChartViewBase
         _drawAngles.reserveCapacity(entryCount)
         _absoluteAngles.reserveCapacity(entryCount)
         
-        let yValueSum = (data as! BradDGCharts.PieChartData).yValueSum
+        let yValueSum = (data as! DGCharts.PieChartData).yValueSum
 
         var cnt = 0
 
